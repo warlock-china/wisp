@@ -1,0 +1,6 @@
+/.settings/
+/*.iml
+/.project
+/target/
+/.classpath
+coverage-report/

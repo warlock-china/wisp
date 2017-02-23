@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<parent>
+        <groupId>cn.com.warlock</groupId>
+        <artifactId>wisp</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>wisp-spirits-base</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+	
+	<modules>
+        <module>wisp-spirits</module>
+        <module>wisp-spirits-spring</module>
+    </modules>
+    
+    <properties>
+		<mockito.version>1.9.5</mockito.version>
+		<commons-lang3.version>3.4</commons-lang3.version>
+		<mybatis-spring.version>1.2.2</mybatis-spring.version>
+        <mybatis.version>3.3.0</mybatis.version>
+    </properties>
+
+</project>

@@ -1,0 +1,7 @@
+DROP TABLE IF EXISTS `t_demo`;
+CREATE TABLE `t_demo` (
+  `id` BIGINT (20) NOT NULL DEFAULT '0' COMMENT '主键',
+  `demo_key`  VARCHAR(255)      NOT NULL DEFAULT '0' COMMENT '',
+  `demo_value`  VARCHAR (255) NOT NULL DEFAULT '0' COMMENT '',
+  PRIMARY KEY (`id`)
+);

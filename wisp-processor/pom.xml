@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>cn.com.warlock</groupId>
+        <artifactId>wisp</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>wisp-processor</artifactId>
+    <name>wisp-processor</name>
+    <packaging>jar</packaging>
+    <version>${wisp.version}</version>
+
+    <dependencies>
+
+        <dependency>
+            <groupId>cn.com.warlock</groupId>
+            <artifactId>wisp-bom-logback</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
+            <optional>true</optional>
+            <type>pom</type>
+        </dependency>
+
+        <dependency>
+            <groupId>cn.com.warlock</groupId>
+            <artifactId>wisp-core</artifactId>
+            <version>${wisp.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>cn.com.warlock</groupId>
+            <artifactId>wisp-processor-kv</artifactId>
+            <version>${wisp-processor-kv.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>cn.com.warlock</groupId>
+            <artifactId>wisp-processor-empty</artifactId>
+            <version>${wisp-processor-empty.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>cn.com.warlock</groupId>
+            <artifactId>wisp-processor-mybatis</artifactId>
+            <version>${wisp-processor-mybatis.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>cn.com.warlock</groupId>
+            <artifactId>wisp-spirits</artifactId>
+            <scope>test</scope>
+            <version>1.0.0</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

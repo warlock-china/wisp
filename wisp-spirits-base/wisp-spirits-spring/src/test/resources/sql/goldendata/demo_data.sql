@@ -1,0 +1,1 @@
+insert into t_demo(id, demo_key, demo_value) values (1, 'key','value');

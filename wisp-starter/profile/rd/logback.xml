@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration>
+
+    <statusListener class="ch.qos.logback.core.status.NopStatusListener"/>
+
+    <jmxConfigurator/>
+
+    <appender name="stdout" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%date [%thread] %-5level %logger{80} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <property name="log.base" value="./log/wisp"/>
+    <appender name="logfile"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <File>${log.base}.log</File>
+        <rollingPolicy
+                class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <FileNamePattern>${log.base}.%d{yyyy-MM-dd}.log
+            </FileNamePattern>
+        </rollingPolicy>
+        <encoder>
+            <pattern>%date [%thread] %-5level %logger{80} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <logger name="io.codis.jodis">
+        <level value="DEBUG"/>
+    </logger>
+
+    <logger name="redis.clients.jedis">
+        <level value="DEBUG"/>
+    </logger>
+
+    <logger name="org.apache.zookeeper">
+        <level value="ERROR"/>
+    </logger>
+
+    <logger name="cn.com.warlock.wisp">
+        <level value="DEBUG"/>
+    </logger>
+
+    <logger name="org.reflections.Reflections">
+        <level value="WARN"/>
+    </logger>
+
+    <root level="INFO">
+        <appender-ref ref="stdout"/>
+        <appender-ref ref="logfile"/>
+    </root>
+
+</configuration>
+

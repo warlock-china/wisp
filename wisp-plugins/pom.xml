@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <groupId>cn.com.warlock</groupId>
+        <artifactId>wisp</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>wisp-plugins</artifactId>
+    <packaging>pom</packaging>
+<!--     <version>1.0.0-SNAPSHOT</version> -->
+    <modules>
+        <module>wisp-injector-empty</module>
+        <module>wisp-injector-kafka</module>
+        <module>wisp-processor-kv</module>
+        <module>wisp-processor-empty</module>
+        <module>wisp-processor-mybatis</module>
+        <module>wisp-router-rest</module>
+        <module>wisp-router-empty</module>
+    </modules>
+
+</project>

@@ -1,0 +1,8 @@
+/.settings/
+/*.iml
+/.project
+/target/
+/.classpath
+log
+coverage-report
+dependency-reduced-pom.xml
